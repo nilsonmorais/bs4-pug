@@ -16,9 +16,8 @@
     +nav-item("#","Bar")
 ```
 
-* `+navbar(color, bg)`
-    * `color`: navbar-dark, navbar-light, navbar-custom. (Default: navbar-dark)
-    * `bg`: bg-white, bg-dark, bg-primary. (Default: bg-dark)
+* `+navbar(class)`
+    * `class`: navbar-dark, navbar-light, navbar-custom. (Default: navbar-dark bg-dark)
 *  `+nav-brand(url)`
     * `url`: Element URL. (Default: "#")
 *  `+nav-list()`
