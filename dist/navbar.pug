@@ -17,9 +17,9 @@ mixin nav-brand(url)
     a.navbar-brand(href=url)
         block
 
-mixin nav-item(url, label, active)
+mixin nav-item(url, label, eleClass)
     - url = url || '#'
-    - active = active || ''
+    - eleClass = eleClass || ''
     - label = label || 'Item'
-        li.nav-item(class=active)
+        li.nav-item(class=eleClass)
             a.nav-link(href=url)= label

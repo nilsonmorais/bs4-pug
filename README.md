@@ -1,3 +1,9 @@
+# Install
+
+- Clone this repo
+- copy dist/ dir to your views/ dir
+- Add to your main pug file the lib dist/core.pug Ex: `include bs4-pug/core`
+
 # Navbar
 
 ```
@@ -5,7 +11,7 @@
   +nav-brand
     img(src='/img/icon.png', width='30', height='30', alt='')
   +nav-list
-    +nav-item("#","Home",true)
+    +nav-item("#","Home","active")
     +nav-item("#","Foo")
     +nav-item("#","Bar")
 ```
@@ -16,8 +22,8 @@
 *  `+nav-brand(url)`
     * `url`: Element URL. (Default: "#")
 *  `+nav-list()`
-*  `+nav-item(url, label, active)`
+*  `+nav-item(url, label, class)`
     * `url`: Element URL. (Default: "#")
     * `label`: Element Label. (Default: "Item")
-    * `active`: If element is active. (Default: false)
+    * `class`: Item class, ex: active, disabled (Default: none)
 
