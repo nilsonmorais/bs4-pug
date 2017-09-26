@@ -1,0 +1,25 @@
+mixin navbar(color,bg)
+    - color = color || 'navbar-dark'
+    - bg = bg || 'bg-dark'
+    nav.navbar.navbar-expand-lg(style=color+" "+bg)
+        block
+
+mixin nav-list()
+    - navid = "navbar-"+Math.round(Math.random()*100000)
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#'+navid, aria-controls='navid', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    .collapse.navbar-collapse(id=navid)
+        ul.navbar-nav.mr-auto
+            block
+
+mixin nav-brand(url)
+    - url = url || '#'
+    a.navbar-brand(href=url)
+        block
+
+mixin nav-item(url, label, active)
+    - url = url || '#'
+    - active = active || ''
+    - label = label || 'Item'
+        li.nav-item(class=active)
+            a.nav-link(href=url)= label
