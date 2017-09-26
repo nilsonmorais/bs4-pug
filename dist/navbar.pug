@@ -1,7 +1,7 @@
 mixin navbar(color,bg)
     - color = color || 'navbar-dark'
     - bg = bg || 'bg-dark'
-    nav.navbar.navbar-expand-lg(style=color+" "+bg)
+    nav.navbar.navbar-expand-lg(class=color+" "+bg)
         block
 
 mixin nav-list()
