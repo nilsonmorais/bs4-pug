@@ -1,6 +1,7 @@
-mixin btn(class)
-    button.btn(type='button', class="btn-"+class)
+mixin btn(btnClass)
+    - btnClass = btnClass || 'btn-primary'
+    button.btn(type='button', class=btnClass)
 
-mixin btn-secondary
-    +btn("secondary")
+mixin btn-secondary()
+    +btn("btn-secondary")
         block
