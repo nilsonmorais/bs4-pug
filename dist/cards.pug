@@ -1,0 +1,36 @@
+mixin card():
+    .card
+        block
+
+mixin card-title(title):
+    - title = title || ""
+    h4.card-title= title
+
+mixin card-subtitle(title):
+    - title = title || ""
+    h6.card-subtitle.mb-2.text-muted= title
+
+mixin card-img(src,alt):
+    - src = src || "#"
+    - alt = alt || ""
+    img.card-img-top(src=src, alt=alt)
+
+mixin card-list():
+    ul.list-group.list-group-flush
+        block
+
+mixin card-list-item():
+    li.list-group-item
+        block
+
+mixin card-text():
+    p.card-text
+        block
+
+mixin card-body():
+    .card-body
+        block
+
+mixin card-header():
+    .card-header
+        block
