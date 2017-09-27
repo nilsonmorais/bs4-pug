@@ -1,6 +1,6 @@
 {
     "name": "@nilsonmorais/bs4-pug",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "description": "Bootstrap 4 Pug Snippets",
     "main": "index.js",
     "scripts": {
