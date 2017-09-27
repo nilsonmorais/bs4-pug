@@ -1,3 +1,10 @@
+# dev
+
+- Clone this repo
+- `npm install`
+- `grunt bump` to increase module version
+- `npm publish` to publish module
+
 # Install
 
 - Clone this repo

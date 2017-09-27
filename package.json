@@ -1,18 +1,19 @@
 {
-  "name": "@nilsonmorais/bs4-pug",
-  "version": "0.0.6",
-  "description": "Bootstrap 4 Pug Snippets",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nilson Morais",
-  "license": "MIT",
-  "dependencies": {
-    "pug": "^2.0.0-rc.4"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-bump": "^0.8.0"
-  }
+    "name": "@nilsonmorais/bs4-pug",
+    "version": "0.0.7",
+    "description": "Bootstrap 4 Pug Snippets",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "publish": "grunt bump && npm publish && exit 0"
+    },
+    "author": "Nilson Morais",
+    "license": "MIT",
+    "dependencies": {
+        "pug": "^2.0.0-rc.4"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-bump": "^0.8.0"
+    }
 }
