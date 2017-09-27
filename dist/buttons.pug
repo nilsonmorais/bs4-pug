@@ -1,7 +1,8 @@
 mixin btn(btnClass)
     - btnClass = btnClass || 'btn-primary'
     button.btn(type='button', class=btnClass)
-
+        block
+        
 mixin btn-secondary()
     +btn("btn-secondary")
         block
