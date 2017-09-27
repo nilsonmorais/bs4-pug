@@ -1,8 +1,8 @@
 # Install
 
 - Clone this repo
-- copy dist/ dir to your views/ dir
-- Add to your main pug file the lib dist/core.pug Ex: `include bs4-pug/core`
+- copy `dist/` dir to your `views/` dir
+- Add to your main pug the file `dist/core.pug` Ex: `include bs4-pug/core`
 
 # Navbar
 
