@@ -5,7 +5,7 @@ mixin navbar(eleClass)
 
 mixin nav-list()
     - navid = "navbar-"+Math.round(Math.random()*100000)
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#'+navid, aria-controls='navid', aria-expanded='false', aria-label='Toggle navigation')
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#'+navid, aria-controls=navid, aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
     .collapse.navbar-collapse(id=navid)
         ul.navbar-nav.mr-auto
