@@ -1,10 +1,11 @@
 {
     "name": "@nilsonmorais/bs4-pug",
-    "version": "0.0.19",
+    "version": "0.0.23",
     "description": "Bootstrap 4 Pug Snippets",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pub": "grunt bump && npm publish"
     },
     "author": "Nilson Morais",
     "license": "MIT",
